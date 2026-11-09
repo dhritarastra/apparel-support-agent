@@ -1,0 +1,83 @@
+{
+  "kind": "deterministic_regression",
+  "model": null,
+  "case": "different items must not be mistaken for duplicate refunds",
+  "passed": true,
+  "expected": [
+    [
+      "CAP-NVY-OS",
+      "20.00"
+    ],
+    [
+      "HOOD-GRY-L",
+      "60.00"
+    ]
+  ],
+  "actual": [
+    [
+      "CAP-NVY-OS",
+      "20.00"
+    ],
+    [
+      "HOOD-GRY-L",
+      "60.00"
+    ]
+  ],
+  "turns": [
+    {
+      "requested_sku": "HOOD-GRY-L",
+      "status": "executed",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund|HOOD-GRY-L",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "HOOD-GRY-L",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "60.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:23:44.800176Z"
+      }
+    },
+    {
+      "requested_sku": "CAP-NVY-OS",
+      "status": "executed",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund|CAP-NVY-OS",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "CAP-NVY-OS",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "20.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:23:44.800792Z"
+      }
+    },
+    {
+      "requested_sku": "CAP-NVY-OS",
+      "status": "already_done",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund|CAP-NVY-OS",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "CAP-NVY-OS",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "20.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:23:44.800792Z"
+      }
+    }
+  ],
+  "timestamp": "2026-11-09T08:23:44.801288+00:00"
+}

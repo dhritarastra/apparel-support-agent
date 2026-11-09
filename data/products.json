@@ -1,0 +1,14 @@
+[
+  {"sku": "TEE-BLK-M", "name": "Classic Cotton Tee - Black (M)", "style": "classic-tee", "price": 25.00},
+  {"sku": "TEE-BLK-L", "name": "Classic Cotton Tee - Black (L)", "style": "classic-tee", "price": 25.00},
+  {"sku": "HOOD-GRY-M", "name": "Core Hoodie - Grey (M)", "style": "core-hoodie", "price": 60.00},
+  {"sku": "HOOD-GRY-L", "name": "Core Hoodie - Grey (L)", "style": "core-hoodie", "price": 60.00},
+  {"sku": "JEAN-IND-32", "name": "Slim Jeans - Indigo (32)", "style": "slim-jeans", "price": 75.00},
+  {"sku": "JEAN-IND-34", "name": "Slim Jeans - Indigo (34)", "style": "slim-jeans", "price": 75.00},
+  {"sku": "JKT-OLV-M", "name": "Field Jacket - Olive (M)", "style": "field-jacket", "price": 84.00, "on_sale": true, "sale_name": "Autumn Clearance: Field Jacket"},
+  {"sku": "JKT-OLV-L", "name": "Field Jacket - Olive (L)", "style": "field-jacket", "price": 84.00, "on_sale": true, "sale_name": "Autumn Clearance: Field Jacket"},
+  {"sku": "SCARF-WOOL", "name": "Wool Scarf - Charcoal", "style": "wool-scarf", "price": 24.50, "on_sale": true, "sale_name": "Winter Warm-Up: Wool Scarf"},
+  {"sku": "SNK-WHT-9", "name": "Court Sneaker - White (US 9)", "style": "court-sneaker", "price": 90.00},
+  {"sku": "SNK-WHT-10", "name": "Court Sneaker - White (US 10)", "style": "court-sneaker", "price": 90.00, "in_stock": false},
+  {"sku": "CAP-NVY-OS", "name": "Everyday Cap - Navy", "style": "everyday-cap", "price": 20.00}
+]

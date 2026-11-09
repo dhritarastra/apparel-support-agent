@@ -1,0 +1,19 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Secrets, runtime state, caches
+.env
+state/
+.pytest_cache/
+# NOTE: eval_runs/ is deliberately NOT ignored: eval run JSONs are committed as evidence.
+
+# IDE settings
+.idea/

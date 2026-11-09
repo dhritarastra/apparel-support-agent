@@ -1,0 +1,7 @@
+{
+  "kind": "offline_tests",
+  "command": "python -B -m pytest -q -p no:cacheprovider",
+  "returncode": 0,
+  "stdout": "........................................................................ [ 58%]\n....................................................                     [100%]\n124 passed in 0.86s\n",
+  "stderr": ""
+}

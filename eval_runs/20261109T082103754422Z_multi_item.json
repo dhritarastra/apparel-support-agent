@@ -1,0 +1,79 @@
+{
+  "kind": "deterministic_regression",
+  "model": null,
+  "case": "different items must not be mistaken for duplicate refunds",
+  "passed": false,
+  "expected": [
+    [
+      "CAP-NVY-OS",
+      "20.00"
+    ],
+    [
+      "HOOD-GRY-L",
+      "60.00"
+    ]
+  ],
+  "actual": [
+    [
+      "HOOD-GRY-L",
+      "60.00"
+    ]
+  ],
+  "turns": [
+    {
+      "requested_sku": "HOOD-GRY-L",
+      "status": "executed",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "HOOD-GRY-L",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "60.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:21:03.753397Z"
+      }
+    },
+    {
+      "requested_sku": "CAP-NVY-OS",
+      "status": "already_done",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "HOOD-GRY-L",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "60.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:21:03.753397Z"
+      }
+    },
+    {
+      "requested_sku": "CAP-NVY-OS",
+      "status": "already_done",
+      "record": {
+        "idempotency_key": "C003|ORD-1006|refund",
+        "action": "refund",
+        "customer_key": "C003",
+        "order_id": "ORD-1006",
+        "sku": "HOOD-GRY-L",
+        "reason": "changed_mind",
+        "detail": {
+          "amount": "60.00",
+          "refund_to": "original payment method"
+        },
+        "as_of": "2026-11-09",
+        "executed_at": "2026-11-09T08:21:03.753397Z"
+      }
+    }
+  ],
+  "timestamp": "2026-11-09T08:21:03.754405+00:00"
+}

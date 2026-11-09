@@ -1,0 +1,20 @@
+{
+  "kind": "live_model",
+  "started_at": "2026-11-09T08:24:48.315635+00:00",
+  "finished_at": "2026-11-09T08:24:48.316208+00:00",
+  "model": "claude-sonnet-5-5",
+  "business_date": "2026-11-09",
+  "selected_cases": "all",
+  "planned_cases": 21,
+  "status": "setup_error",
+  "active_case": null,
+  "cases": [],
+  "summary": {
+    "total": 0,
+    "planned": 21,
+    "passed": 0,
+    "failed": 0,
+    "failed_cases": []
+  },
+  "error": "ANTHROPIC_API_KEY is not set"
+}

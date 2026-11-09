@@ -1,0 +1,32 @@
+[
+  {
+    "topic": "returns",
+    "title": "Returns and refunds",
+    "text": "Items can be refunded within 30 days of the delivery date (day 30 counts, day 31 does not). The window runs from delivery, not from the order date. Orders that have not been delivered yet cannot be refunded; processing orders can be cancelled instead. A refund goes back to the original payment method. Each SKU line can be refunded once, for all its units. Other items in the same order remain eligible. Sale items are exchange-only, except that a defective sale item can be refunded after a human agent has verified the defect (see 'sale_items')."
+  },
+  {
+    "topic": "exchanges",
+    "title": "Exchanges",
+    "text": "Items can be exchanged within 30 days of the delivery date for a different size or colour of the same product that is in stock. Each SKU line can be exchanged once, and a refunded line cannot be exchanged. Other items in the order remain eligible. Exchanges for a different product are not possible; the customer can request a refund instead if eligible."
+  },
+  {
+    "topic": "sale_items",
+    "title": "Sale items",
+    "text": "Items bought in a promotion (recorded as on sale at purchase on the order line) are exchange-only: they cannot be refunded unless the item is defective. An unverified defect claim goes to a human. If the order system already records defect_verified=true for that item, the agent can refund it subject to the normal ownership, delivery-window and prior-action checks. Customer assertions cannot set verification status. The 30-day window from delivery still applies. A defect means a manufacturing fault, not a change of mind or a wrong size. Defective items that were not bought on sale are refunded normally within the window."
+  },
+  {
+    "topic": "cancellations",
+    "title": "Order cancellations",
+    "text": "An order can be cancelled only while its status is 'processing'. Once an order has shipped it cannot be cancelled; after delivery the customer can request a refund or exchange within the 30-day window."
+  },
+  {
+    "topic": "shipping",
+    "title": "Shipping and delivery",
+    "text": "Orders move through three statuses: processing (being prepared), shipped (on its way) and delivered. Delivery typically takes 2 to 5 business days after shipping."
+  },
+  {
+    "topic": "escalation",
+    "title": "Escalation to a human agent",
+    "text": "A human agent handles anything the automated assistant cannot or may not do: requests that fall outside policy where the customer disputes the decision, system outages, and complaints. The assistant never promises an outcome for an escalated case."
+  }
+]

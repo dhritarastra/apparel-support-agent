@@ -1,0 +1,155 @@
+{
+  "kind": "live_model",
+  "started_at": "2026-11-09T08:25:59.639184+00:00",
+  "finished_at": "2026-11-09T08:26:06.309156+00:00",
+  "model": "claude-sonnet-5-5",
+  "business_date": "2026-11-09",
+  "selected_cases": [
+    "01"
+  ],
+  "planned_cases": 1,
+  "status": "completed",
+  "active_case": null,
+  "cases": [
+    {
+      "id": "01",
+      "name": "Refund within the window -> refund",
+      "customer": "C001",
+      "env": {},
+      "seeded": [],
+      "passed": true,
+      "failures": [],
+      "checks": [
+        {
+          "check": "all requested turns ran",
+          "passed": true,
+          "detail": "1/1 turns"
+        },
+        {
+          "check": "every turn exited 0",
+          "passed": true,
+          "detail": "exit codes [0]"
+        },
+        {
+          "check": "every turn produced a result",
+          "passed": true,
+          "detail": "missing turns []"
+        },
+        {
+          "check": "expected action types",
+          "passed": true,
+          "detail": "expected ['refund'], got ['refund']"
+        },
+        {
+          "check": "expected order",
+          "passed": true,
+          "detail": "all on ORD-1001"
+        },
+        {
+          "check": "refund count in state",
+          "passed": true,
+          "detail": "expected 1, found 1"
+        },
+        {
+          "check": "exact refund item and amount",
+          "passed": true,
+          "detail": "expected [('TEE-BLK-M', '25.00')], got [('TEE-BLK-M', '25.00')]"
+        }
+      ],
+      "turns": [
+        {
+          "message": "Hi, I'd like a refund for the black tee from order ORD-1001. I changed my mind.",
+          "exit_code": 0,
+          "stdout": "Your refund has been processed. The 25.00 for the Classic Cotton Tee in Black (M) from ORD-1001 will go back to your original payment method. Is there anything else I can help with?\n\nAction taken: refund - ORD-1001 TEE-BLK-M, 25.00 to the original payment method\n",
+          "stderr": "",
+          "reply": "Your refund has been processed. The 25.00 for the Classic Cotton Tee in Black (M) from ORD-1001 will go back to your original payment method. Is there anything else I can help with?",
+          "action_line": "Action taken: refund - ORD-1001 TEE-BLK-M, 25.00 to the original payment method",
+          "new_actions": [
+            "refund - ORD-1001 TEE-BLK-M, 25.00 to the original payment method"
+          ],
+          "repeated_actions": [],
+          "fallback_reason": null,
+          "model_calls": 3,
+          "trace": [
+            {
+              "tool": "lookup_order",
+              "input": {
+                "order_id": "ORD-1001"
+              },
+              "output": {
+                "found": true,
+                "order_id": "ORD-1001",
+                "status": "delivered",
+                "placed_on": "2026-10-18",
+                "shipped_on": "2026-10-21",
+                "delivered_on": "2026-10-25",
+                "days_since_delivery": 15,
+                "refunded_before": false,
+                "items": [
+                  {
+                    "sku": "TEE-BLK-M",
+                    "name": "Classic Cotton Tee - Black (M)",
+                    "quantity": 1,
+                    "price_paid": "25.00",
+                    "on_sale": false,
+                    "sale_name": null,
+                    "defect_verified": false,
+                    "exchange_options": [
+                      {
+                        "sku": "TEE-BLK-L",
+                        "name": "Classic Cotton Tee - Black (L)"
+                      }
+                    ]
+                  }
+                ],
+                "actions_already_taken": []
+              },
+              "is_error": false
+            },
+            {
+              "tool": "request_refund",
+              "input": {
+                "order_id": "ORD-1001",
+                "sku": "TEE-BLK-M",
+                "reason": "changed_mind"
+              },
+              "output": {
+                "requested": "refund",
+                "status": "executed",
+                "done": "refund - ORD-1001 TEE-BLK-M, 25.00 to the original payment method",
+                "message": "Completed. You may confirm this to the customer."
+              },
+              "is_error": false
+            }
+          ]
+        }
+      ],
+      "state_actions": [
+        {
+          "idempotency_key": "C001|ORD-1001|refund|TEE-BLK-M",
+          "action": "refund",
+          "customer_key": "C001",
+          "order_id": "ORD-1001",
+          "sku": "TEE-BLK-M",
+          "reason": "changed_mind",
+          "detail": {
+            "amount": "25.00",
+            "refund_to": "original payment method"
+          },
+          "as_of": "2026-11-09",
+          "executed_at": "2026-11-09T08:26:02.951488Z"
+        }
+      ],
+      "error_traceback": null,
+      "interrupted": false,
+      "duration_s": 6.7
+    }
+  ],
+  "summary": {
+    "total": 1,
+    "planned": 1,
+    "passed": 1,
+    "failed": 0,
+    "failed_cases": []
+  }
+}

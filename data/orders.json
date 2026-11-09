@@ -1,0 +1,240 @@
+[
+  {
+    "order_id": "ORD-1001",
+    "customer_id": "C001",
+    "customer_email": "alice.tan@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-18",
+    "shipped_on": "2026-10-21",
+    "delivered_on": "2026-10-25",
+    "items": [
+      {
+        "sku": "TEE-BLK-M",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1002",
+    "customer_id": "C001",
+    "customer_email": "alice.tan@example.com",
+    "status": "delivered",
+    "placed_on": "2026-09-12",
+    "shipped_on": "2026-09-15",
+    "delivered_on": "2026-09-20",
+    "items": [
+      {
+        "sku": "HOOD-GRY-M",
+        "quantity": 1,
+        "unit_price": 60.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1003",
+    "customer_id": "C002",
+    "customer_email": "ben.lim@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-28",
+    "shipped_on": "2026-10-30",
+    "delivered_on": "2026-11-02",
+    "items": [
+      {
+        "sku": "JKT-OLV-M",
+        "quantity": 1,
+        "unit_price": 84.0,
+        "on_sale_at_purchase": true,
+        "sale_name_at_purchase": "Autumn Clearance: Field Jacket"
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1004",
+    "customer_id": "C002",
+    "customer_email": "ben.lim@example.com",
+    "status": "shipped",
+    "placed_on": "2026-11-05",
+    "shipped_on": "2026-11-07",
+    "items": [
+      {
+        "sku": "JEAN-IND-32",
+        "quantity": 1,
+        "unit_price": 75.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1005",
+    "customer_id": "C003",
+    "customer_email": "chloe.ng@example.com",
+    "status": "processing",
+    "placed_on": "2026-11-08",
+    "items": [
+      {
+        "sku": "SNK-WHT-9",
+        "quantity": 1,
+        "unit_price": 90.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1006",
+    "customer_id": "C003",
+    "customer_email": "chloe.ng@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-30",
+    "shipped_on": "2026-11-02",
+    "delivered_on": "2026-11-05",
+    "items": [
+      {
+        "sku": "HOOD-GRY-L",
+        "quantity": 1,
+        "unit_price": 60.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      },
+      {
+        "sku": "CAP-NVY-OS",
+        "quantity": 1,
+        "unit_price": 20.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1007",
+    "customer_id": "C004",
+    "customer_email": "dev.patel@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-24",
+    "shipped_on": "2026-10-27",
+    "delivered_on": "2026-10-30",
+    "items": [
+      {
+        "sku": "JEAN-IND-34",
+        "quantity": 1,
+        "unit_price": 75.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ],
+    "refunded": true
+  },
+  {
+    "order_id": "ORD-1008",
+    "customer_id": "C004",
+    "customer_email": "dev.patel@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-03",
+    "shipped_on": "2026-10-06",
+    "delivered_on": "2026-10-10",
+    "items": [
+      {
+        "sku": "TEE-BLK-L",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1009",
+    "customer_id": "C004",
+    "customer_email": "dev.patel@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-02",
+    "shipped_on": "2026-10-05",
+    "delivered_on": "2026-10-09",
+    "items": [
+      {
+        "sku": "HOOD-GRY-M",
+        "quantity": 1,
+        "unit_price": 60.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2001",
+    "customer_id": null,
+    "customer_email": "gina.guest@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-12",
+    "shipped_on": "2026-10-15",
+    "delivered_on": "2026-10-20",
+    "items": [
+      {
+        "sku": "TEE-BLK-M",
+        "quantity": 1,
+        "unit_price": 25.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2002",
+    "customer_id": null,
+    "customer_email": "gina.guest@example.com",
+    "status": "processing",
+    "placed_on": "2026-11-08",
+    "items": [
+      {
+        "sku": "SCARF-WOOL",
+        "quantity": 1,
+        "unit_price": 24.5,
+        "on_sale_at_purchase": true,
+        "sale_name_at_purchase": "Winter Warm-Up: Wool Scarf"
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-2003",
+    "customer_id": null,
+    "customer_email": "gary.guest@example.com",
+    "status": "delivered",
+    "placed_on": "2026-08-22",
+    "shipped_on": "2026-08-26",
+    "delivered_on": "2026-08-30",
+    "items": [
+      {
+        "sku": "SNK-WHT-9",
+        "quantity": 1,
+        "unit_price": 90.0,
+        "on_sale_at_purchase": false,
+        "sale_name_at_purchase": null
+      }
+    ]
+  },
+  {
+    "order_id": "ORD-1010",
+    "customer_id": "C002",
+    "customer_email": "ben.lim@example.com",
+    "status": "delivered",
+    "placed_on": "2026-10-28",
+    "shipped_on": "2026-10-30",
+    "delivered_on": "2026-11-02",
+    "items": [
+      {
+        "sku": "JKT-OLV-M",
+        "quantity": 1,
+        "unit_price": 84.0,
+        "on_sale_at_purchase": true,
+        "sale_name_at_purchase": "Autumn Clearance: Field Jacket",
+        "defect_verified": true
+      }
+    ]
+  }
+]
